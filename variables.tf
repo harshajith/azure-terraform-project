@@ -1,9 +1,9 @@
-variable "subscription_id" {
-}
+# variable "subscription_id" {
+# }
 
-variable "client_id" {
-}
+# variable "client_id" {
+# }
 
-variable "address_space" {
-}
+# variable "address_space" {
+# }
 

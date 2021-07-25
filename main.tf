@@ -11,6 +11,7 @@ resource "azurerm_virtual_network" "myterraformnetwork" {
 
     tags = {
         environment = "Terraform Demo"
+        development = "true"
     }
 }
 

@@ -142,7 +142,7 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
 
     admin_ssh_key {
         username       = "azureuser"
-        public_key     = file("~/.ssh/id_rsa.pub")
+        public_key     = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIzjF1dUwLoMd9MrfBJTN15WKkjDCQ++Thd7ObvqhHLGNxptQkzr4oaqjwVb8vs1mDtaqsVDmeCDnMsvI50TBiO9pfFFs4SvyFBTGCJi6ybKGDN18/ndU8w5We8DN1jlYgAUXtDSARpl2GEuCtek/n1Bq7uZaXZ0m+FlaiD9XkPQxO7bvVcTZwQeOynSMIXoX/MxG6JMoe/xlR4xQXE8vgzaG9savAgQg91DZiB3Z1TB1A3pzcz8m6z0c+hzzcnUBhAVAycrDTPI8jT+45yEPPDq7FlhNZgDGa0MSf7hpfOr07ZISRg1RqNN+fCiWqswil9jIm1O2r2DYRN+zEf+3eK25xr7lZU8zqWoFVMbYN1b/zP2nbzFRl4jfgK5cI+4CWf4WInAv6Q/PiX0C8bTTSVyj8mIeQul+Z0Fo3yQvAAXvQ/NQTQNw6ONgZBQ+QYBCR9fMZOKd2jW0UY/fJkQksuyhn8C9xq5/drToj3H+SIrJ+M0JbBBcr0fFU94IKEFk= harsha@Harshas-MacBook-Pro-2.local"
     }
 
     boot_diagnostics {

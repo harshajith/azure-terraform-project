@@ -1,28 +1,28 @@
 stages:
-  - stage: validate
-    jobs:
-      - job: validate
-        continueOnError: false
-        steps:
-          - task: TerraformInstaller@0
-            inputs:
-              terraformVersion: '0.14.9'
-          - task: TerraformTaskV2@2
-            displayName: init
-            inputs:
-              provider: 'azurerm'
-              command: 'init'
-              backendServiceArm: 'terraform-scn'
-              backendAzureRmResourceGroupName: 'terraform-rg'
-              backendAzureRmStorageAccountName: 'harsha1985storageaccount'
-              backendAzureRmContainerName: 'devopscontainer'
-              backendAzureRmKey: 'terraform.tfstate'
-              backendAWSBucketName: 
-          - task: TerraformTaskV2@2
-            displayName: validate
-            inputs:
-              provider: 'azurerm'
-              command: 'validate'
+  # - stage: validate
+  #   jobs:
+  #     - job: validate
+  #       continueOnError: false
+  #       steps:
+  #         - task: TerraformInstaller@0
+  #           inputs:
+  #             terraformVersion: '0.14.9'
+  #         - task: TerraformTaskV2@2
+  #           displayName: init
+  #           inputs:
+  #             provider: 'azurerm'
+  #             command: 'init'
+  #             backendServiceArm: 'terraform-scn'
+  #             backendAzureRmResourceGroupName: 'terraform-rg'
+  #             backendAzureRmStorageAccountName: 'harsha1985storageaccount'
+  #             backendAzureRmContainerName: 'devopscontainer'
+  #             backendAzureRmKey: 'terraform.tfstate'
+  #             backendAWSBucketName: 
+  #         - task: TerraformTaskV2@2
+  #           displayName: validate
+  #           inputs:
+  #             provider: 'azurerm'
+  #             command: 'validate'
 
   - stage: deploy
     jobs:

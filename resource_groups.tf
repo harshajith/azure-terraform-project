@@ -1,6 +1,6 @@
 # Create a resource group if it doesn't exist
-resource "azurerm_resource_group" "RG-non-prod-engineering" {
-    name     = "RG-non-prod-engineering"
+resource "azurerm_resource_group" "terraform_rg" {
+    name     = "terraform-rg"
     location = "australiasoutheast"
 
     tags = {

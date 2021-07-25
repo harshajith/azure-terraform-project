@@ -7,14 +7,14 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name = "tstate"
+    resource_group_name = "terraform-rg"
     storage_account_name = "harsha1985storageaccount"
     container_name = "devopscontainer"
   }
 }
-provider "azurerm" {
+provider "azurerm" { 
   features {}
 }
 
-data "azurerm_client_config" "current" {}
+data "azurerm_client_config" "current"  {}
 
